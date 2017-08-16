@@ -13,6 +13,7 @@
 //    This is a (very) simple raytracer that is intended to demonstrate 
 //    using OpenCL buffers.
 
+#include <cstdlib>
 #include <iostream>
 #include <fstream>
 #include <sstream>

@@ -38,7 +38,9 @@
 #include <iostream>
 #include <fstream>
 
+#if 0
 #include "bmpLoader.hpp"  // Header file for Bitmap image
+#endif
 
 #ifndef _WIN32
 #include <GL/glx.h>
@@ -393,7 +395,7 @@ main(int argc, char ** argv)
                 << std::endl;
             exit(1);
         }
-#ifdef linux
+#ifndef _WIN32
 #define _malloca    alloca
 #endif //linux
         cl_platform_id *platforms = (cl_platform_id*) _malloca(

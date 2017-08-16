@@ -392,4 +392,4 @@ public:
 	}
 };
 
-#endif __INFO_HDR__
+#endif // __INFO_HDR__

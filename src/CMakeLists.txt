@@ -9,10 +9,12 @@ SUBDIRS(Chapter_2/HelloWorld
 	Chapter_16/Dijkstra
 	Chapter_22/)	
 
+IF(GLEW_FOUND AND OPENGL_FOUND AND GLUT_FOUND)
 IF(WIN32 OR UNIX AND NOT APPLE)
 	# Sinewave uses wgl or glx
 	SUBDIRS(Chapter_12/Sinewave)
 ENDIF(WIN32 OR UNIX AND NOT APPLE)
+ENDIF(GLEW_FOUND AND OPENGL_FOUND AND GLUT_FOUND)
 
 IF(WIN32)
 	# D3Dinterop is Windows only

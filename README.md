@@ -11,3 +11,13 @@ This book is getting old now and I'm pleased to say that we are
 working on new version that will cover OpenCL 2.1; more information
 soon.
 
+Android Build
+=============
+
+Edit the configCMakeAndroid.sh script to select the Android API level (currently android-23) and
+select the Android ABI (currently arm64-v8a).
+
+    % export ANDROID_NDK=<full path to ndk-bundle>
+    % ./configCMakeAndroid.sh
+    % cd build-arm-debug
+    % make
